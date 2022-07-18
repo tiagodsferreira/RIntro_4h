@@ -1,4 +1,4 @@
 R Intro_omit files/
-.Rmd
-.Rhistory
-.Rproj.user
+*.Rmd
+*.Rhistory
+*.Rproj.user
