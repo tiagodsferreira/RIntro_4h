@@ -1,0 +1,137 @@
+Breed,Classification,obey,reps_lower,reps_upper
+Bullmastiff,slow,25,41,80
+Bull Terrier,slow,26,41,80
+Pug,slow,26,41,80
+Chihuahua,slow,27,41,80
+French Bulldog,slow,27,41,80
+Great Pyrenees,slow,27,41,80
+Griffon Bruxellois,slow,27,41,80
+Old English Sheepdog,slow,27,41,80
+Saint Bernard,slow,27,41,80
+Lakeland Terrier,slow,28,41,80
+Petit Basset Griffon Vend̩en,slow,28,41,80
+Japanese Chin,slow,29,41,80
+Sealyham Terrier,slow,30,41,80
+Lhasa Apso,slow,31,41,80
+Tibetan Terrier,slow,31,41,80
+Norfolk Terrier,slow,32,41,80
+Dandie Dinmont Terrier,slow,33,41,80
+Italian Greyhound,slow,33,41,80
+Skye Terrier,slow,33,41,80
+Maltese,slow,34,41,80
+Chinese Crested,slow,35,41,80
+Scottish Terrier,slow,35,41,80
+Akita,normal,45,26,40
+Dachshund,normal,45,26,40
+Great Dane,normal,45,26,40
+Otterhound,normal,45,26,40
+Greyhound,normal,46,26,40
+Havanese,normal,46,26,40
+Staffordshire Bull Terrier,normal,46,26,40
+Bichon Frise,normal,47,26,40
+Finnish Spitz,normal,47,26,40
+Fox Terrier (Smooth),normal,47,26,40
+Irish Wolfhound,normal,47,26,40
+Scottish Deerhound,normal,48,26,40
+Welsh Terrier,normal,48,26,40
+American Foxhound,normal,49,26,40
+Bedlington Terrier,normal,49,26,40
+Black and Tan Coonhound,normal,49,26,40
+Cavalier King Charles Spaniel,normal,49,26,40
+Jack Russell terrier,normal,49,26,40
+Pointer,normal,49,26,40
+Soft-coated Wheaten Terrier,normal,49,26,40
+American Water Spaniel,normal,50,26,40
+Ibizan Hound,normal,50,26,40
+Tibetan Spaniel,normal,50,26,40
+West Highland White Terrier,normal,50,26,40
+Whippet,normal,50,26,40
+Alaskan Malamute,normal,51,26,40
+Chinese Shar Pei,normal,51,26,40
+English Foxhound,normal,51,26,40
+Shiba Inu,normal,51,26,40
+Siberian Husky,normal,51,26,40
+Wire Fox Terrier,normal,51,26,40
+Kuvasz,normal,52,26,40
+Boxer,normal,53,26,40
+Curly Coated Retriever,normal,53,26,40
+Australian Shepherd,normal,54,26,40
+Boston Terrier,normal,54,26,40
+King Charles Spaniel,normal,54,26,40
+Saluki,normal,54,26,40
+German Wirehaired Pointer,normal,55,26,40
+Irish Terrier,normal,55,26,40
+Rhodesian Ridgeback,normal,55,26,40
+Wirehaired Pointing Griffon,normal,55,26,40
+Chesapeake Bay Retriever,clever,65,16,25
+Norwegian Elkhound,clever,65,16,25
+Airedale Terrier,clever,66,16,25
+Briard,clever,66,16,25
+Australian Silky Terrier,clever,67,16,25
+Australian Terrier,clever,67,16,25
+Border Terrier,clever,67,16,25
+English Setter,clever,67,16,25
+Portuguese Water Dog,clever,67,16,25
+Samoyed,clever,68,16,25
+Field Spaniel,clever,69,16,25
+Giant Schnauzer,clever,70,16,25
+American Staffordshire Terrier,clever,71,16,25
+Bouvier des Flandres,clever,71,16,25
+Norwich Terrier,clever,71,16,25
+Cairn Terrier,clever,72,16,25
+Clumber Spaniel,clever,72,16,25
+Yorkshire Terrier,clever,72,16,25
+Irish Setter,clever,73,16,25
+Manchester Terrier,clever,73,16,25
+Miniature Pinscher,clever,73,16,25
+Pharaoh Hound,clever,73,16,25
+Puli,clever,73,16,25
+Affenpinscher,clever,74,16,25
+Bearded Collie,clever,74,16,25
+Dalmatian,clever,74,16,25
+Gordon Setter,clever,74,16,25
+Welsh Springer Spaniel,clever,74,16,25
+Kerry Blue Terrier,clever,75,16,25
+Newfoundland,clever,75,16,25
+Cardigan Welsh Corgi,intelligent,80,5,15
+Flat-Coated Retriever,intelligent,80,5,15
+Pomeranian,intelligent,81,5,15
+Brittany,intelligent,82,5,15
+Standard Schnauzer,intelligent,82,5,15
+Miniature Schnauzer,intelligent,84,5,15
+Schipperke,intelligent,84,5,15
+German Shorthaired Pointer,intelligent,85,5,15
+Belgian Sheepdog,intelligent,86,5,15
+Bernese Mountain Dog,intelligent,86,5,15
+Cocker Spaniel,intelligent,86,5,15
+Irish Water Spaniel,intelligent,86,5,15
+Vizsla,intelligent,86,5,15
+Weimaraner,intelligent,86,5,15
+English Springer Spaniel,intelligent,87,5,15
+Collie,intelligent,88,5,15
+English Cocker Spaniel,intelligent,88,5,15
+Belgian Malinois,intelligent,89,5,15
+Keeshond,intelligent,89,5,15
+Pembroke Welsh Corgi,intelligent,89,5,15
+Belgian Shepherd Dog (Tervuren),intelligent,90,5,15
+Golden Retriever,bright,91,1,4
+German Shepherd,bright,92,1,4
+Australian Cattle Dog,bright,94,1,4
+Border Collie,bright,94,1,4
+Doberman Pinscher,bright,94,1,4
+Labrador Retriever,bright,95,1,4
+Poodle,bright,95,1,4
+Rottweiler,bright,95,1,4
+Papillon,bright,95,1,4
+Shetland Sheepdog,bright,95,1,4
+Afghan Hound,dumb,,81,100
+Basenji,dumb,,81,100
+Basset Hound,dumb,,81,100
+Beagle,dumb,,81,100
+Bloodhound,dumb,,81,100
+Borzoi,dumb,,81,100
+Bulldog,dumb,,81,100
+Chow Chow,dumb,,81,100
+Mastiff,dumb,,81,100
+Pekingese,dumb,,81,100
+Shih Tzu,dumb,,81,100
