@@ -101,7 +101,7 @@ shell("cls") # Or shortcut Ctrl + l
 This DF was adapted from: https://data.world/len/intelligence-of-dogs    
 
 ```{r, eval=FALSE}
-DOGS <- read.csv("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\dogs.csv")
+DOGS <- read.csv("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\dogs.csv")
 ```
 
 2. Check **DOGS** class and structure.  
@@ -193,7 +193,7 @@ DOGS[DOGS$class == "clever" & DOGS$obey >= 70,]
 
 1. Import **coffee.csv** Data Frame (DF) to your workspace and assign this DF to a new object called **COFFEE**. This DF has Yelp.com reviews on coffee shops from Austin and was adapted from: https://data.world/rdowns26/austin-coffee-yelp-reviews/workspace/project-summary    
 ```{r, eval=FALSE}
-COFFEE <- read.csv("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\coffee.csv")
+COFFEE <- read.csv("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\coffee.csv")
 ```
 
 2. Summarize **COFFEE** DF and check its last 5 rows.  

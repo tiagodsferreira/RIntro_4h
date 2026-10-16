@@ -143,7 +143,7 @@ df
 
 bechdel <-
   read.table(
-    "G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\bechdel.csv",
+    "G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\bechdel.csv",
     header = TRUE,
     sep = ";",
     quote = "\"", 
@@ -156,7 +156,7 @@ bechdel <-
 
 bechdel <-
   read.csv2(
-    "G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\bechdel.csv")
+    "G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\bechdel.csv")
 dim(bechdel)
 head(bechdel, 2)
 
@@ -233,7 +233,7 @@ plot(mpg ~ as.factor(cyl), data=mtcars)
 install.packages("data.table")
 help(package="data.table")
 library(data.table)
-bechdel <- fread("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\bechdel.csv")
+bechdel <- fread("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\bechdel.csv")
 names(bechdel)
 bechdel[c(152,1500),1:4]
 ?data.table::fread

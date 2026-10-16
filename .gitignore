@@ -1,3 +1,4 @@
 R Intro_omit files/
 *.Rhistory
 *.Rproj.user
+.Rproj.user

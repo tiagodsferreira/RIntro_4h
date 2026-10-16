@@ -52,7 +52,7 @@ shell("cls") # Or shortcut Ctrl + l
 # obey: probability of obeying the first command;  
 # reps_lower: lower limit of repetitions to understand new commands;  
 # reps_upper: upper limit of repetitions to understand new commands;   
-DOGS <- read.csv("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\dogs.csv")
+DOGS <- read.csv("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\dogs.csv")
 
 # 2. Check **DOGS** class and structure.  
 class(DOGS)
@@ -96,7 +96,7 @@ DOGS <- DOGS[!is.na(DOGS$obey), ]
 # dumb < slow < normal < clever <  intelligent < bright
 DOGS$class <- factor(DOGS$class, 
                      levels=c("dumb", "slow", "normal", "clever", "intelligent", "bright", "genious"), ordered = TRUE) 
-# we can drop unused levels using the **droplevels()** functio
+# we can drop unused levels using the **droplevels()** function
 DOGS$class <- droplevels(DOGS$class)
 
 #13. Confirm **class** attributes and, using the table() function, count the number of breeds in each **class** category.  
@@ -111,7 +111,7 @@ DOGS[DOGS$class == "clever" & DOGS$obey >= 70,]
 # Practice time #3: "Nice coffee!"
 ###############################################################################
 #1. Import **coffee.csv** Data Frame (DF) to your workspace and assign this DF to a new object called **COFFEE**. This DF has Yelp.com reviews on coffee shops from Austin and was adapted from: https://data.world/rdowns26/austin-coffee-yelp-reviews/workspace/project-summary    
-COFFEE <- read.csv("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\coffee.csv")
+COFFEE <- read.csv("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\coffee.csv")
 
 #2. Summarize **COFFEE** DF and check its last 5 rows.  
 summary(COFFEE)

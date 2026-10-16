@@ -1,6 +1,6 @@
 ---
-title: "A (very) short introduction to R"
-author: "Tiago Ferreira"
+title: "A (very) short introduction to R and RStudio"
+author: "Tiago Ferreira & Filipa Nunes"
 output:
   ioslides_presentation: 
     widescreen: true
@@ -9,17 +9,15 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-library("mosaic")   # Load additional packages here 
-library("datasets")  
-library("lattice")
-library("psych")
-library("Hmisc")
-library("ggplot2")
-library("knitr")
-library("png")
+# Load additional packages here 
+library(datasets)  
+library(lattice)
+library(psych)
+library(Hmisc)
+library(ggplot2)
+library(knitr)
+library(png)
 library(kableExtra)
-
-
 ```
 
 ## What is R?
@@ -32,7 +30,7 @@ library(kableExtra)
 - SPSS:  
 Easy to use (point-and-click)   
 Basic graphics   
-Limited statitiscal procedures   
+Limited statistical procedures   
 Inflexible programming   
 
 - R:  
@@ -65,7 +63,6 @@ The R basic installation includes a set of resources that allows:
 - Editing and managing data structures  
 - Analyzing data  
 - Data visualization
-  
   
   
 *R base functionalities can easily be expanded through the installation of packages developed by a large, dynamic community of contributors. These packages are available for free download on [CRAN](https://www.r-project.org/).* 
@@ -121,7 +118,7 @@ knitr::include_graphics("G:/My Drive/FPCEUP/R trainning/GitRepo/R crash course/R
 ```{r}
 print("Hello!")
 ```
-*"Run" in Rstudio ou "ctrl + enter" to execute the code*
+*"Run" in Rstudio or "ctrl + enter" to execute the code*
 
 
 ## R Work session
@@ -250,7 +247,7 @@ help.search("ls") # searches the help system using the keyword "ls" | OR ??ls
 
 ### R help files include:  
 - Information about functions' general purpose, arguments, and values  
-- Further details about how the a function's works     
+- Further details about how the function's works     
 - Examples of a function's use     
 
 # Practice time 1: "Playing R’s lottery"
@@ -293,7 +290,7 @@ knitr::kable(data_beh, format = "markdown")
 
 ## Data classes 
 R can manage different types or classes of data:    
-- Numeric data (integer or decimal ou decimais)   
+- Numeric data (integer or decimal)   
 - Logical data (True or False)  
 - Character data (strings)   
 
@@ -375,14 +372,14 @@ class(dailyuse)
 ## Data Structures - Matrices (cont.)
 - We can use the **matrix()** function to create a matrix  
 ```{r, echo = TRUE}
-dailyuse <- matrix(dailyuse,  nrow = 4, ncol = 5, dimnames = list(NULL, 
+dailyuse <- matrix(dailyuse, nrow = 4, ncol = 5, dimnames = list(NULL, 
                               c("day1", "day2", "day3", "day4", "day5")))
 dailyuse
 class(dailyuse)
 ```
 
 ## Data Structures - Matrices (cont.)
-- to access data in a matrix we need to identify, first, the row(s) and, second, the column(s) where data is located
+- to access data in a matrix we need, first, to identify the row(s) and, second, the column(s) where data is located
 ```{r}
 dailyuse[1, 2]  # select element in row 1, column 2
 ```
@@ -413,7 +410,7 @@ df
 ```{r}
 bechdel <-
   read.table(
-    "G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\bechdel.csv",
+    "G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\bechdel.csv",
     header = TRUE,
     sep = ";",
     quote = "\"", 
@@ -429,7 +426,7 @@ bechdel <-
 ```{r}
 bechdel <-
   read.csv2(
-    "G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\bechdel.csv")
+    "G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\bechdel.csv")
 dim(bechdel)
 head(bechdel, 2)
 ```
@@ -479,7 +476,7 @@ mtcars[sample(1:nrow(mtcars), 2), ]
 
 ## Data Structures - Data frame (cont.) 
 
-- Taking indexing a bit further, we can use logical operators to select elements that respect a condition
+- We can also use logical operators to select elements that respect a certain condition
 
 ```{r}
 mtcars$hp <= 70
@@ -621,7 +618,7 @@ model2$coefficients # 2 cylinders is the reference category
 
 
 ## R formulas (cont.)
-- Post-hoc comparisons - which specific groups’s means are different?
+- Post-hoc comparisons - which specific groups’ means are different?
 ```{r, echo = TRUE}
 TukeyHSD(model2) 
 ```
@@ -666,7 +663,7 @@ library(data.table)
 ```
 
 ```{r, echo=TRUE}
-bechdel <- fread("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\R_intro_data\\bechdel.csv")
+bechdel <- fread("G:\\My Drive\\FPCEUP\\R trainning\\GitRepo\\Intro to R\\RIntro_4h\\R_intro_data\\bechdel.csv")
 names(bechdel)
 bechdel[c(152,1500),1:4]
 ```
@@ -680,7 +677,7 @@ bechdel[c(152,1500),1:4]
 install.packages("psych")
 help(package="psych")
 ```
-```{r, echo=TRUE,}
+```{r, echo=TRUE}
 library(psych)
 ```
 
@@ -705,7 +702,7 @@ describeBy(bechdel[ ,5], group=bechdel[ ,4])
 
 ## The *"psych"* package (cont.)
 ```{r, echo=TRUE}
-reliability <- alpha(bechdel[ ,c(5, 6)]) # Internal consistency measures of reliability
+reliability <- psych::alpha(bechdel[ ,c(5, 6)]) # Internal consistency measures of reliability
 reliability$total
 ```
 
